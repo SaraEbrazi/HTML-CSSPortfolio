@@ -1,0 +1,33 @@
+<div id="left"></div>
+<div id="right"></div>
+<style>
+  body {
+    background: #62306D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    height: 100px;
+  }
+  #left {
+    width: 140px;
+    background: #F7EC7D;
+  }
+  #right {
+    width: 60px;
+    background: #E38F66;
+  }
+  #left:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #62306D;
+    border-radius: 50%;
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 200px 0px #62306D, 0px 100px #62306D, 200px 100px #62306D, 140px 0px 0px -10px #62306D, 140px 100px 0px -10px #62306D;
+  }
+</style>
